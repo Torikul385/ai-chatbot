@@ -1,0 +1,42 @@
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+// env("DATABASE_URL")
+datasource db {
+  provider = "postgresql"
+  url    =  env("DATABASE_URL")
+}
+
+model User {
+  username String @id 
+  name     String 
+  email    String 
+  dob      DateTime 
+  is_male Boolean 
+  createdAt DateTime @default(now())
+  convs  Conversation[] 
+}
+
+
+model Conversation {
+  id  String @id 
+  username  String 
+  createdAt DateTime @default(now())
+
+
+  user User @relation(fields: [username], references: [username])
+  chats chat[] 
+}
+
+
+
+model chat {
+  id String @id 
+  text String @db.Text 
+  conv_id  String 
+  createdAt DateTime @default(now())
+
+  conv Conversation @relation(fields: [conv_id], references: [id])
+}
