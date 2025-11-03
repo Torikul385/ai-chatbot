@@ -33,18 +33,11 @@ backend/*.sqlite
 # --------------------
 # Node / Next.js (frontend)
 # --------------------
+# instead of ignoring all frontend files, do this:
 frontend/node_modules/
 frontend/.next/
-frontend/.vercel/
-frontend/out/
-frontend/.env*
-frontend/npm-debug.log*
-frontend/yarn-debug.log*
-frontend/yarn-error.log*
-frontend/pnpm-debug.log*
-frontend/package-lock.json
-frontend/.turbo/
-frontend/.cache/
+frontend/.env
+
 
 # --------------------
 # OS files
