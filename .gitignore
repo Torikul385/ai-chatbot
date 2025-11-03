@@ -1,0 +1,71 @@
+# --------------------
+# Global
+# --------------------
+*.log
+*.pyc
+__pycache__/
+.env
+.DS_Store
+*.sqlite3
+.vscode/
+.idea/
+*.pid
+
+# --------------------
+# Python / FastAPI (backend)
+# --------------------
+backend/__pycache__/
+backend/.venv/
+backend/env/
+backend/venv/
+backend/.env
+backend/*.pyc
+backend/*.pyo
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.coverage
+backend/coverage.xml
+backend/.benchmarks/
+backend/*.db
+backend/*.sqlite
+
+# --------------------
+# Node / Next.js (frontend)
+# --------------------
+frontend/node_modules/
+frontend/.next/
+frontend/.vercel/
+frontend/out/
+frontend/.env*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/package-lock.json
+frontend/.turbo/
+frontend/.cache/
+
+# --------------------
+# OS files
+# --------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --------------------
+# PyInstaller
+# --------------------
+*.spec
+build/
+dist/
+
+# --------------------
+# Local development
+# --------------------
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp

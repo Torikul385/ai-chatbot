@@ -1,0 +1,11 @@
+========================== 	PSNR    ===============================
+
+PSNR = 10 log(MAX^2 / MSE) 
+
+[for RGB image] 
+
+MSE_R = 
+MSE_G = 
+MSE_B = 
+
+MSE = (MSE_R + MSE_G + MSE_B ) / 3
